@@ -22,6 +22,7 @@ This class also contains static method for document id generation:
   - `entropy -> ArrayLike | undefined`
 ___
 ## Navigation
+- [Example](#example)
 - [Getters methods](#getters-methods)
   - [getId](#getid)
   - [getEntropy](#getentropy)
@@ -57,7 +58,17 @@ ___
   - [setTransferredAtCoreBlockHeight](#settransferredatcoreblockheight)
   - [setDocumentTypeName](#setdocumenttypename)
 ___
+## Example
 
+```js
+const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+
+const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
+
+const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+```
+___
 ## Getters methods
 
 ### `getId`
