@@ -1,7 +1,7 @@
-## How to Build
+# How to Build
 
 ---
-### Set packages for build
+## Set packages for build
 Optional you can choose packages for build in `src/lib.rs`
 by `pub use`
 
@@ -27,23 +27,23 @@ pub use pshenmic_dpp_identity_transitions;
 pub use pshenmic_dpp_state_transition;
 ````
 ___
-### Install dependencies
+## Install dependencies
 ```yarn```
 
 ### OSX
 ```brew install llvm```
 
 ___
-### Build
+## Build
 ```yarn build:full```
 ___
-### CJS
+## CJS
 By default, the module is built in ES6.
 If you need CommonJS (CJS), simply run:
 
 ```yarn babel```
 ___
-### UNIT TESTS
+## UNIT TESTS
 For unit tests, you need to [convert module to CJS](#cjs)
 and then run:
 
