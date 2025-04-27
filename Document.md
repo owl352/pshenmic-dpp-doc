@@ -18,7 +18,7 @@ you need to use serialized to bytes Document from `rs-dpp` or `pshenmic-dpp`
 
 This class also contains static method for document id generation:
 
-- `generate_id`
+- `generateId`
     - `documentTypeName -> String`
     - `ownerId -> IdentifierWASM | String | ArrayLike`
     - `dataContractId -> IdentifierWASM | String | ArrayLike`
