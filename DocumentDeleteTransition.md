@@ -16,7 +16,7 @@ ___
 
 - [Example](#example)
 - [Fields](#fields)
-  - [base](#base)
+    - [base](#base)
 - [Getters methods](#getters-methods)
     - [toDocumentTransition](#todocumenttransition)
 
