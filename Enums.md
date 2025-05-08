@@ -11,6 +11,7 @@ Currently available enums:
 - `NetworkWASM`
 - `PlatformVersionWASM`
 - `AssetLockProofTypeWASM`
+- `PoolingWASM`
 
 Every enum can be passed in multiple formats:
 
@@ -92,3 +93,11 @@ ___
 
 - `Chain`
 - `Instant`
+
+___
+
+### `PoolingWASM`
+
+- `Never`
+- `IfAvailable`
+- `Standard`
