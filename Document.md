@@ -69,12 +69,12 @@ ___
 ## Example
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 ```
 
 ___

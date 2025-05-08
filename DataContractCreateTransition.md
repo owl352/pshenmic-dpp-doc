@@ -27,9 +27,9 @@ ___
 ## Example
 
 ```js
-const dataContract = wasm.DataContractWASM.fromValue(value, false, PlatformVersionWASM.PLATFORM_V1)
+const dataContract = DataContractWASM.fromValue(value, false, PlatformVersionWASM.PLATFORM_V1)
 
-const dataContractTransition = new wasm.DataContractCreateTransitionWASM(dataContract, BigInt(1))
+const dataContractTransition = new DataContractCreateTransitionWASM(dataContract, BigInt(1))
 ```
 
 ___
@@ -78,7 +78,7 @@ ___
 Allows to set DataContract in `DataContractWASM` with `PlatformVersionEnum`
 
 ```js
-const dataContract = wasm.DataContractWASM.fromValue(value, false, PlatformVersionWASM.PLATFORM_V1)
+const dataContract = DataContractWASM.fromValue(value, false, PlatformVersionWASM.PLATFORM_V1)
 
 dataContractTransition.setDataContract('PLATFORM_V1')
 ```

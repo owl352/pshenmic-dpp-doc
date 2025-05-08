@@ -28,7 +28,7 @@ ___
 ### Example
 
 ```js
-const instantLock = new wasm.InstantLockWASM(
+const instantLock = new InstantLockWASM(
   0,
   [],
   'dbdb604952d08184b55d48c915ed78aadc81dbc5cc98e8b4821abe5b4bbcbecb',
@@ -58,7 +58,7 @@ This fields contains input for instant lock in array of `OutPointWASM`
 
 ```js
 instantLock.inputs = [
-  new wasm.OutPointWASM(
+  new OutPointWASM(
     'e8b43025641eea4fd21190f01bd870ef90f1a8b199d8fc3376c5b62c0b1a179d',
     1
   )

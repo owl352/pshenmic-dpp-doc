@@ -19,7 +19,7 @@ ___
 ## Example
 
 ```js
-new wasm.PrefundedVotingBalanceWASM('value', BigInt(9999))
+new PrefundedVotingBalanceWASM('value', BigInt(9999))
 ```
 
 ___
@@ -31,7 +31,7 @@ All fields only readable.
 Contains index name with value for voting in `String`
 
 ```js
-const prefundedVotingBalance = new wasm.PrefundedVotingBalanceWASM('value', BigInt(9999))
+const prefundedVotingBalance = new PrefundedVotingBalanceWASM('value', BigInt(9999))
 
 prefundedVotingBalance.indexName // -> String
 ```
@@ -42,7 +42,7 @@ ___
 Contains amount of credits for voting in `BigInt`
 
 ```js
-const prefundedVotingBalance = new wasm.PrefundedVotingBalanceWASM('value', BigInt(9999))
+const prefundedVotingBalance = new PrefundedVotingBalanceWASM('value', BigInt(9999))
 
 prefundedVotingBalance.credits // -> BigInt
 ```

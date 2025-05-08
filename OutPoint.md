@@ -29,7 +29,7 @@ ___
 ### Example
 
 ```js
-const outpoint = new wasm.OutPointWASM(
+const outpoint = new OutPointWASM(
   'e8b43025641eea4fd21190f01bd870ef90f1a8b199d8fc3376c5b62c0b1a179d',
   1
 )

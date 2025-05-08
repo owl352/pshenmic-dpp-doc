@@ -27,14 +27,14 @@ ___
 ## Example
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 
-const replaceTransition = new wasm.DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
+const replaceTransition = new DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
 ```
 
 ___
@@ -48,9 +48,9 @@ All fields are readable and writable.
 Contains document base transition `DocumentBaseTransitionWASM`
 
 ```js
-const replaceTransition = new wasm.DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
+const replaceTransition = new DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
 
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -69,7 +69,7 @@ ___
 Contains document data in `Object`
 
 ```js
-const replaceTransition = new wasm.DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
+const replaceTransition = new DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
 
 replaceTransition.data // -> Object
 
@@ -83,7 +83,7 @@ ___
 Contains document revision in `BigInt`
 
 ```js
-const replaceTransition = new wasm.DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
+const replaceTransition = new DocumentReplaceTransitionWASM(documentInstance, BigInt(1), 'preorder')
 
 replaceTransition.revision // -> BigInt
 
@@ -99,14 +99,14 @@ ___
 Returns document create transition in `DocumentCreateTransitionWASM`
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 
-const deleteTransition = new wasm.DocumentDeleteTransitionWASM(documentInstance, BigInt(1), 'preorder')
+const deleteTransition = new DocumentDeleteTransitionWASM(documentInstance, BigInt(1), 'preorder')
 
 deleteTransition.toDocumentTransition() // -> DocumentTransitionWASM
 ```
