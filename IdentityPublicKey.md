@@ -14,8 +14,8 @@ Arguments in constructor:
 
 You can create `IdentityPublicKeyWASM` via constructor and `fromBytes`
 
-If you want to create PublicKey from bytes,
-you need to use serialized to bytes Document from `rs-dpp` or `pshenmic-dpp`
+If you want to create `IdentityPublicKey` from bytes,
+you need to use serialized to bytes `IdentityPublicKey` from `rs-dpp` or `pshenmic-dpp`
 ___
 
 ## Navigation

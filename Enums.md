@@ -10,6 +10,7 @@ Currently available enums:
 - `SecurityLevelWASM`
 - `NetworkWASM`
 - `PlatformVersionWASM`
+- `AssetLockProofTypeWASM`
 
 Every enum can be passed in multiple formats:
 
@@ -84,3 +85,10 @@ ___
 - `PLATFORM_V6`
 - `PLATFORM_V7`
 - `PLATFORM_V8`
+
+___
+
+### `AssetLockProofTypeWASM`
+
+- `Chain`
+- `Instant`
