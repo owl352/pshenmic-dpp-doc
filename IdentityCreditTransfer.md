@@ -1,8 +1,8 @@
 # IdentityCreditTransferWASM
 
-This class allows to create instance of IdentityTopUpTransition struct
+This class allows to create instance of IdentityCreditTransfer struct
 
-`IdentityTopUpTransitionWASM` can be created via constructor, bytes and state transition
+`IdentityCreditTransferWASM` can be created via constructor, bytes and state transition
 
 Constructor params:
 
