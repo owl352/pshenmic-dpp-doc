@@ -45,7 +45,7 @@ ___
 ## Example
 
 ```js
-const identifier = new wasm.IdentifierWASM('11111111111111111111111111111111')
+const identifier = new IdentifierWASM('11111111111111111111111111111111')
 const schema = {
   "note": {
     "type": "object",
@@ -59,7 +59,7 @@ const schema = {
   }
 }
 
-const dataContract = new wasm.DataContractWASM(identifier, BigInt(2), schema, null, false)
+const dataContract = new DataContractWASM(identifier, BigInt(2), schema, null, false)
 ```
 
 ___

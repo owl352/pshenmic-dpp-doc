@@ -27,7 +27,7 @@ ___
 ## Example
 
 ```js
-new wasm.DocumentBaseTransitionWASM(
+new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -44,7 +44,7 @@ All fields are readable and writable.
 Returns document id in `IdentfierWASM`
 
 ```js
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -62,7 +62,7 @@ ___
 Returns identity contract nonce for transition in `BigInt`
 
 ```js
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -80,7 +80,7 @@ ___
 Returns data contract id in `IdentifierWASM`
 
 ```js
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -98,7 +98,7 @@ ___
 Returns document type name in `String`
 
 ```js
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',

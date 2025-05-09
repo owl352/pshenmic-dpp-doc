@@ -21,7 +21,7 @@ Allow to get Identifier in multiple formats by these methods:
 
 Usage:
 ```js
-const identifier = wasm.IdentifierWASM.fromBase58('ckBqfQe7LU7vwrwXopyCB4n5phZShjA16BGhNGpsD5U')
+const identifier = IdentifierWASM.fromBase58('ckBqfQe7LU7vwrwXopyCB4n5phZShjA16BGhNGpsD5U')
 
 // Output: 'ckBqfQe7LU7vwrwXopyCB4n5phZShjA16BGhNGpsD5U'
 console.log(identifier.base58())

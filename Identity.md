@@ -33,7 +33,7 @@ ___
 ## Example
 
 ```js
-const identity = new wasm.IdentityWASM('H2pb35GtKpjLinncBYeMsXkdDYXCbsFzzVmssce6pSJ1')
+const identity = new IdentityWASM('H2pb35GtKpjLinncBYeMsXkdDYXCbsFzzVmssce6pSJ1')
 ```
 
 ___
@@ -127,7 +127,7 @@ ___
 Allows to add Identity public key with selected id in `IdentityPublicKeyWASM`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
