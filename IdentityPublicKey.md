@@ -14,8 +14,8 @@ Arguments in constructor:
 
 You can create `IdentityPublicKeyWASM` via constructor and `fromBytes`
 
-If you want to create PublicKey from bytes,
-you need to use serialized to bytes Document from `rs-dpp` or `pshenmic-dpp`
+If you want to create `IdentityPublicKey` from bytes,
+you need to use serialized to bytes `IdentityPublicKey` from `rs-dpp` or `pshenmic-dpp`
 ___
 
 ## Navigation
@@ -44,7 +44,7 @@ ___
 ## Example
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -65,9 +65,9 @@ Allows to validate private key for selected public key.
 Returns `Boolean`
 
 ```js
-const privateKey = wasm.PrivateKeyWASM.fromWIF('cR4EZ2nAvCmn2cFepKn7UgSSQFgFTjkySAchvcoiEVdm48eWjQGn')
+const privateKey = PrivateKeyWASM.fromWIF('cR4EZ2nAvCmn2cFepKn7UgSSQFgFTjkySAchvcoiEVdm48eWjQGn')
 
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -86,7 +86,7 @@ ___
 Returns key id in `Number`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -105,7 +105,7 @@ ___
 Returns purpose value for identity public key in `String`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -124,7 +124,7 @@ ___
 Returns security level for identity public key in `String`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -143,7 +143,7 @@ ___
 Returns key type for identity public key in `String`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -162,7 +162,7 @@ ___
 Returns read only flag for identity public key in `Boolean`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -181,7 +181,7 @@ ___
 Returns identity public key data in Hex `String`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -200,7 +200,7 @@ ___
 Returns optional disabled at timestamp identity public key `?Number`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -221,7 +221,7 @@ ___
 Allows to set key id in `Number`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -240,7 +240,7 @@ ___
 Allows to set purpose value for identity public key in `PurposeEnum`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -259,7 +259,7 @@ ___
 Allows to set security level for identity public key in `SecurityLevelEnum`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -278,7 +278,7 @@ ___
 Allows to set key type for identity public key in `KeyTypeEnum`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -297,7 +297,7 @@ ___
 Allows to set read only flag for identity public key in `Boolean`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -316,7 +316,7 @@ ___
 Allows to set identity public key data in Hex `String`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',
@@ -335,7 +335,7 @@ ___
 Allows to set disabled at timestamp identity public key `BigInt`
 
 ```js
-const publicKey = new wasm.IdentityPublicKeyWASM(
+const publicKey = new IdentityPublicKeyWASM(
   2,
   'AUTHENTICATION',
   'CRITICAL',

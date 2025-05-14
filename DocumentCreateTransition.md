@@ -28,14 +28,14 @@ ___
 ## Example
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
 ```
 
 ___
@@ -49,7 +49,7 @@ All fields are readable and writable.
 Contains document data in `Object`
 
 ```js
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
 
 createTransition.data // -> Object
 
@@ -63,9 +63,9 @@ ___
 Contains document base transition `DocumentBaseTransitionWASM`
 
 ```js
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
 
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -84,7 +84,7 @@ ___
 Contains entropy for create transition 32 bytes length in `Uint8Array`
 
 ```js
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
 
 createTransition.entropy // -> Uint8Array
 
@@ -98,9 +98,9 @@ ___
 Contains info about prefunded voting balance in `?PrefundedVotingBalanceWASM`
 
 ```js
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
 
-const prefundedVotingBalance = new wasm.PrefundedVotingBalanceWASM('note', BigInt(9999))
+const prefundedVotingBalance = new PrefundedVotingBalanceWASM('note', BigInt(9999))
 
 createTransition.prefundedVotingBalance // -> ?PrefundedVotingBalanceWASM
 
@@ -119,14 +119,14 @@ ___
 Returns document create transition in `DocumentCreateTransitionWASM`
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'note')
 
 createTransition.toDocumentTransition() // -> DocumentTransitionWASM
 ```

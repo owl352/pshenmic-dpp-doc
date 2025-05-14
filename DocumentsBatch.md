@@ -36,12 +36,12 @@ ___
 ## Example
 
 ```js
-const documentInstance = new wasm.DocumentWASM(document, documentTypeName, revision, dataContractId, ownerId, id)
-const createTransition = new wasm.DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'preorder')
+const documentInstance = new DocumentWASM(document, documentTypeName, revision, dataContractId, ownerId, id)
+const createTransition = new DocumentCreateTransitionWASM(documentInstance, BigInt(1), 'preorder')
 
 const documentTransition = createTransition.toDocumentTransition()
 
-const batchTransition = new wasm.DocumentsBatchWASM([documentTransition], documentInstance.getOwnerId(), 1)
+const batchTransition = new DocumentsBatchWASM([documentTransition], documentInstance.getOwnerId(), 1)
 ```
 
 ___

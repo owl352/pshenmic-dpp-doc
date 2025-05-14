@@ -26,15 +26,15 @@ ___
 ## Example
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
-const recipientIdentifier = new wasm.IdentifierWASM('HzHXSQcBkU9Ve5YAxhGd8NgA72xFcG9nCZKKxhayn1NW')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const recipientIdentifier = new IdentifierWASM('HzHXSQcBkU9Ve5YAxhGd8NgA72xFcG9nCZKKxhayn1NW')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 
-const transferTransition = new wasm.DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
+const transferTransition = new DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
 ```
 ___
 ## Fields
@@ -45,9 +45,9 @@ All fields are readable and writable.
 Contains document base transition `DocumentBaseTransitionWASM`
 
 ```js
-const transferTransition = new wasm.DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
+const transferTransition = new DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
 
-const base = new wasm.DocumentBaseTransitionWASM(
+const base = new DocumentBaseTransitionWASM(
   '9tSsCqKHTZ8ro16MydChSxgHBukFW36eMLJKKRtebJEn',
   BigInt(12350),
   'note',
@@ -66,7 +66,7 @@ ___
 Contains recipient identifier in `IdentifierWASM`
 
 ```js
-const transferTransition = new wasm.DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
+const transferTransition = new DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
 
 transferTransition.recipientId // -> IdentifierWASM
 
@@ -82,15 +82,15 @@ ___
 Returns document create transition in `DocumentCreateTransitionWASM`
 
 ```js
-const dataContractIdentifier = new wasm.IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
-const ownerIdentifier = new wasm.IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
-const recipientIdentifier = new wasm.IdentifierWASM('HzHXSQcBkU9Ve5YAxhGd8NgA72xFcG9nCZKKxhayn1NW')
+const dataContractIdentifier = new IdentifierWASM('GnXgMaiqAwTxh44ccQe8AoCgFvcseHK5CncH3sUorW4X')
+const ownerIdentifier = new IdentifierWASM('CXH2kZCATjvDTnQAPVg28EgPg9WySUvwvnR5ZkmNqY5i')
+const recipientIdentifier = new IdentifierWASM('HzHXSQcBkU9Ve5YAxhGd8NgA72xFcG9nCZKKxhayn1NW')
 
 const properties = {"message": "Tutorial CI Test @ Tue, 07 Jan 2025 15:27:50 GMT"}
 
-const documentInstance = new wasm.DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
+const documentInstance = new DocumentWASM(properties, "note", BigInt(1), dataContractIdentifier, ownerIdentifier)
 
-const transferTransition = new wasm.DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
+const transferTransition = new DocumentTransferTransitionWASM(documentInstance, BigInt(1), 'preorder', recipientIdentifier)
 
 transferTransition.toDocumentTransition() // -> DocumentTransitionWASM
 ```
